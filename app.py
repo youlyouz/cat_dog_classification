@@ -1,3 +1,8 @@
+import os
+
+# Disable GPU support for TensorFlow
+os.environ['CUDA_VISIBLE_DEVICES'] = ''
+
 from flask import Flask, render_template, request, jsonify
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
