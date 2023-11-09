@@ -1,0 +1,6 @@
+flask
+tensorflow
+tensorflow-hub
+numpy
+pillow
+gunicorn
